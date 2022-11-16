@@ -1,0 +1,9 @@
+# vscode folder
+.vscode/
+
+# Python folders
+__pycache__/
+.ipynb_checkpoints/
+
+# Datasets 
+coqa/
