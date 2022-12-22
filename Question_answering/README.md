@@ -2,15 +2,13 @@
 # Question Answering on CoQA
 In this assignment we had to generate an answer given a question and the relative context. This is a more difficult challenge with respect to the span extraction of the answer. 
 For this task we used the [CoQA dataset](https://stanfordnlp.github.io/coqa/) removing from the original dataset all the ***unanswerable*** questions as stated in the problem statement that the professors gave us.
-<center>
-<figure>
-    <img src="../images/CoQA_example.png" width="55%" />
-    <p style="font-size:0.8rem">
-        <em>Image from the </em> 
-        <a href="https://arxiv.org/abs/1808.07042">CoQA paper</a>
+<div align="center">
+    <img src="../images/CoQA_example.png" width="42%" />
+    <p style="font-size:0.8rem" align="center">
+        <em>A dialogue example from </em> 
+        <a href="https://arxiv.org/abs/1808.07042">CoQA paper.</a>
     </p>
-</figure>
-</center>
+</div>
 
 CoQA contains also a rationale text, that is an optional evidence that you can use for improving the answer capabilities. In order to simplify the entire process we didn't use it and we only used the "*span text*" attribute.
 
@@ -26,14 +24,12 @@ To implement the model we used the [*TFEncoderDecoderModel*](https://huggingface
 
 We also had to consider the models fine-tuned with the **history**. Given a question i, the history includes all the previous questions and answers up to i. We concatenated all these strings to the question + the context of the current sample and we fine-tuned the models with this new dataset.
 
-<center>
-<figure>
-    <img src="../images/QA_models.png" width="35%" />
-    <p style="font-size:0.8rem">
-        <em>A simple schema to create all the combination of models that we tested. </em> 
+<div align="center">
+    <img src="../images/QA_models.png" width="25%" />
+    <p style="font-size:0.8rem" align="center">
+        <em>A simple schema to create all the combinations of models that we tested. </em> 
     </p>
-</figure>
-</center>
+</div>
 
 
 
