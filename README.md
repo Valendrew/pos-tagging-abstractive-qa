@@ -1,4 +1,4 @@
-# master-nlp-assignments
+# Natural Language Processing assignments in POS tagging and Q&A
 This repository contains two assignments developed for the Natural Language Processing course of the Master's Degree in Artificial Intelligence at University of Bologna during the A.Y. 2022/2023.
 
 Both assignments were done in Colab Notebooks, hence it's recommended to run them in the same environment. However, there shouldn't be any problems in other IPython Notebooks, except for some limitations (e.g. mounting a Google Drive storage).
