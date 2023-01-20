@@ -22,7 +22,7 @@ Moreover we had to train the model with different seeds to make a final comparis
 
 To implement the model we used the [*TFEncoderDecoderModel*](https://huggingface.co/docs/transformers/v4.24.0/en/model_doc/encoder-decoder#transformers.TFEncoderDecoderModel) class of Huggingface transformers. We imported the pretrained version for TinyBERT and DistilRoBERTa and then we performed the fine-tuning on the CoQA dataset.
 
-We also had to consider the models fine-tuned with the **history**. Given a question i, the history includes all the previous questions and answers up to i. We concatenated all these strings to the question + the context of the current sample and we fine-tuned the models with this new dataset.
+We also had to consider the models fine-tuned with the **history**. Given the *i*-th question, the history includes all the previous questions and answers up to *i*. We concatenated all these strings to the question plus the context of the current sample and we fine-tuned the models with this new dataset.
 
 <div align="center">
     <img src="../images/QA_models.png" width="25%" />
